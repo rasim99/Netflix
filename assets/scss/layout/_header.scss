@@ -1,0 +1,26 @@
+header{
+    #top__header{
+        background-image: url("/assets/images/Netflix_Banner.jpg");
+        width: 100%;
+        margin-top: 100px; 
+        object-fit: cover; 
+        text-align: center; 
+        padding-block: 110px;
+        h2{
+          @include text__element($padding__top:60px,$f__size:32px,$f_weight:300,$color:$white,$l__hight:1.5,$letter__sp:10px)
+        }
+        h1{
+            @include text__element($padding__top:0,$f__size:48px,$f_weight:600,$color:$white,$l__hight:1.5,$letter__sp:5px )
+        }
+        h3{
+            @include text__element($padding__top:0,$f__size:38px,$f_weight:300,$color:$white,$l__hight:1.5,$letter__sp:8px) 
+        }
+        p{
+            @include text__element($padding__top:0,$f__size:24px,$f_weight:200,$color:$white,$l__hight:1.5,$letter__sp:4px)  ;
+            a{
+                color:$darkorange;
+                letter-spacing: 0;
+            }
+        }
+    }
+}
