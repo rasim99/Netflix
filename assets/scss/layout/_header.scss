@@ -24,3 +24,66 @@ header{
         }
     }
 }
+nav .nav__items{
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, rgba(247,74,74,1) 0%, rgb(110, 19, 19) 12%, rgb(141, 14, 8) 29%, rgb(81, 10, 6) 66%, rgb(85, 11, 5) 100%);
+    display: flex;
+    justify-content: space-between;
+    input{
+        font-size: 20px;
+        outline: none;
+        border: none;
+        color: $white;
+        background:transparent;
+        width: 40%;
+        padding: 20px 6px;
+    }
+    button{
+        font-size: 25px;
+        outline: none;
+        border: none;
+        color: $white;
+        background:transparent;
+        padding: 20px 6px;
+        }
+
+    ul{
+        display: flex;
+        margin-right: 20px;
+        li{
+            color: $white;
+            padding: 30px 5px;
+            &:first-child::after{
+               content: "/";
+               margin-left:10px;
+            }
+        }
+        
+    }
+
+    @include breakpoint("sm"){
+        display: block;
+        input{
+            font-size: 18px;
+            width: 40%;
+            padding: 10px 6px;
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+        button{
+            font-size: 20px;
+            padding: 10px 4px;
+            }
+
+            ul{
+                display: flex;
+                margin-left: 15px;
+                li{
+                    color: $white;
+                    padding: 15px 5px;
+                    
+                }
+                
+            }
+    }
+}
