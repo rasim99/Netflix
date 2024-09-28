@@ -609,6 +609,16 @@ nav .nav__items ul li:first-child::after {
   }
 }
 
+footer {
+  background-color: rgb(212, 191, 164);
+  color: #CE1212;
+  text-align: center;
+}
+footer p {
+  padding: 40px;
+  font-size: 22px;
+}
+
 #main__section {
   margin-top: 50px;
 }
