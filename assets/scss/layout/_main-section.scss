@@ -1,95 +1,102 @@
 #main__section{
-    margin-top: 50px;
-    .main__title{
-        width: 100%;
-      display: flex; 
-      gap: 10px;
-      justify-content: center;
-      p{
+    
         position: relative;
-        letter-spacing: 10px;
-        font-size: 60px;
-        font-weight:200;
-        &::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: -8px;
-            width: 60%;
-            height: 4px; 
-            background: rgb(247,74,74);
-            background: linear-gradient(90deg, rgba(247,74,74,1) 0%, rgba(224,34,25,1) 0%, rgba(245,53,53,1) 0%, rgba(208,19,10,1) 48%, rgba(125,8,3,0.6195728291316527) 100%);
-        }
-      }
-      span{
-        font-size: 20px;
-        font-weight: 300;
-        padding-top: 32px;
-        padding-left: 15px;
-      }
-      @include breakpoint("sm"){
-        // width: 100%;
-        display: block; 
-        text-align: center;
-        p{
-            position: relative;
-            font-size: 30px;
-            &::after {
-                content: "";
-                position: absolute;
-                left: 40%;
-                bottom: -5px;
-                width: 70px;
-                height: 2px; 
-            }
-          }
-        span{
-            display: block;
-         margin-top: 5px;
-        }
-    }
-    }
-    .main__content{
-        margin-top: 40px;
-        p{
-            font-size: 18px;
-            font-weight: 300;
-              text-align: center;
-              line-height:1.2;
-        }
-    }
+        top: -39px;
+   .container{
+    background-color: rgb(234, 231, 231);
+    .main__title{   
+        padding-top: 100px;
+       width: 100%;
+     display: flex; 
+     gap: 10px;
+     justify-content: center;
+     p{
+       position: relative;
+       letter-spacing: 10px;
+       font-size: 60px;
+       font-weight:200;
+       &::after {
+           content: "";
+           position: absolute;
+           right: 0;
+           bottom: -8px;
+           width: 60%;
+           height: 4px; 
+           background: rgb(247,74,74);
+           background: linear-gradient(90deg, rgba(247,74,74,1) 0%, rgba(224,34,25,1) 0%, rgba(245,53,53,1) 0%, rgba(208,19,10,1) 48%, rgba(125,8,3,0.6195728291316527) 100%);
+       }
+     }
+     span{
+       font-size: 20px;
+       font-weight: 300;
+       padding-top: 32px;
+       padding-left: 15px;
+     }
+     @include breakpoint("sm"){
+       // width: 100%;
+       display: block; 
+       text-align: center;
+       p{
+           position: relative;
+           font-size: 30px;
+           &::after {
+               content: "";
+               position: absolute;
+               left: 40%;
+               bottom: -5px;
+               width: 70px;
+               height: 2px; 
+           }
+         }
+       span{
+           display: block;
+        margin-top: 5px;
+       }
+   }
+   }
+   .main__content{
+       margin-top: 40px;
+       p{
+           font-size: 18px;
+           font-weight: 300;
+             text-align: center;
+             line-height:1.2;
+       }
+   }
 
-    .main__links{
-        display: flex;
-        justify-content: center;
-        li {
-            padding: 20px 5px;
-            a{
-                color: $dark;
-                text-decoration: none;
-                &:hover{
-                    color: $red;
-                }
-            }
-            &::after{
-                content: "/";
-                margin-left: 10px;
-            }
-            &:last-child::after{
-                content: "";
-            }
-        }
+   .main__links{
+       display: flex;
+       justify-content: center;
+       margin-bottom: 70px;
+       li {
+           padding: 20px 5px;
+           a{
+               color: $dark;
+               text-decoration: none;
+               &:hover{
+                   color: $red;
+               }
+           }
+           &::after{
+               content: "/";
+               margin-left: 10px;
+           }
+           &:last-child::after{
+               content: "";
+           }
+       }
 
-        @include breakpoint("sm"){
-            margin-top: 30px;
-            margin-left: 50px;
-            display: block;
-            li{
-                font-size: 20px;
-                &::after{
-                    content: "";
-                }
-            }
-        }
-    }
+       @include breakpoint("sm"){
+           margin-top: 30px;
+           margin-left: 50px;
+           display: block;
+           li{
+               font-size: 20px;
+               &::after{
+                   content: "";
+               }
+           }
+       }
+   }
+   }
 }

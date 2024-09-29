@@ -208,7 +208,7 @@ table {
 
 /* container */
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -616,21 +616,26 @@ footer p {
 }
 
 #main__section {
-  margin-top: 50px;
+  position: relative;
+  top: -39px;
 }
-#main__section .main__title {
+#main__section .container {
+  background-color: rgb(234, 231, 231);
+}
+#main__section .container .main__title {
+  padding-top: 100px;
   width: 100%;
   display: flex;
   gap: 10px;
   justify-content: center;
 }
-#main__section .main__title p {
+#main__section .container .main__title p {
   position: relative;
   letter-spacing: 10px;
   font-size: 60px;
   font-weight: 200;
 }
-#main__section .main__title p::after {
+#main__section .container .main__title p::after {
   content: "";
   position: absolute;
   right: 0;
@@ -640,22 +645,22 @@ footer p {
   background: rgb(247, 74, 74);
   background: linear-gradient(90deg, rgb(247, 74, 74) 0%, rgb(224, 34, 25) 0%, rgb(245, 53, 53) 0%, rgb(208, 19, 10) 48%, rgba(125, 8, 3, 0.6195728291) 100%);
 }
-#main__section .main__title span {
+#main__section .container .main__title span {
   font-size: 20px;
   font-weight: 300;
   padding-top: 32px;
   padding-left: 15px;
 }
 @media (max-width: 576px) {
-  #main__section .main__title {
+  #main__section .container .main__title {
     display: block;
     text-align: center;
   }
-  #main__section .main__title p {
+  #main__section .container .main__title p {
     position: relative;
     font-size: 30px;
   }
-  #main__section .main__title p::after {
+  #main__section .container .main__title p::after {
     content: "";
     position: absolute;
     left: 40%;
@@ -663,51 +668,52 @@ footer p {
     width: 70px;
     height: 2px;
   }
-  #main__section .main__title span {
+  #main__section .container .main__title span {
     display: block;
     margin-top: 5px;
   }
 }
-#main__section .main__content {
+#main__section .container .main__content {
   margin-top: 40px;
 }
-#main__section .main__content p {
+#main__section .container .main__content p {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
   line-height: 1.2;
 }
-#main__section .main__links {
+#main__section .container .main__links {
   display: flex;
   justify-content: center;
+  margin-bottom: 70px;
 }
-#main__section .main__links li {
+#main__section .container .main__links li {
   padding: 20px 5px;
 }
-#main__section .main__links li a {
+#main__section .container .main__links li a {
   color: #000000;
   text-decoration: none;
 }
-#main__section .main__links li a:hover {
+#main__section .container .main__links li a:hover {
   color: #CE1212;
 }
-#main__section .main__links li::after {
+#main__section .container .main__links li::after {
   content: "/";
   margin-left: 10px;
 }
-#main__section .main__links li:last-child::after {
+#main__section .container .main__links li:last-child::after {
   content: "";
 }
 @media (max-width: 576px) {
-  #main__section .main__links {
+  #main__section .container .main__links {
     margin-top: 30px;
     margin-left: 50px;
     display: block;
   }
-  #main__section .main__links li {
+  #main__section .container .main__links li {
     font-size: 20px;
   }
-  #main__section .main__links li::after {
+  #main__section .container .main__links li::after {
     content: "";
   }
 }
@@ -795,6 +801,57 @@ footer p {
     width: 100%;
     height: 100%;
   }
+}
+
+.cards__items .card .img__wrapper {
+  width: 95%;
+  height: 382px;
+  overflow: hidden;
+}
+.cards__items .card .img__wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.cards__items .card__content {
+  position: relative;
+  top: -50px;
+  left: 1.5%;
+  background-color: rgb(245, 241, 241);
+  width: 92%;
+  height: 300px;
+  text-align: center;
+  padding-top: 20px;
+}
+.cards__items .card__content h2 {
+  color: rgb(56, 55, 55);
+  font-weight: 600;
+  font-size: 18px;
+}
+.cards__items .card__content .content__p {
+  color: rgb(167, 163, 163);
+  text-align: center;
+  margin-block: 12px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.cards__items .card__content .learnMore {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 40px;
+  position: relative;
+  text-align: start;
+  padding-left: 20px;
+}
+.cards__items .card__content .learnMore a {
+  font-weight: 300;
+  font-size: 20px;
+  color: rgb(25, 24, 24);
+  text-decoration: underline red 3px;
+}
+.cards__items .card__content .learnMore a:hover {
+  color: #CE1212;
 }
 
 #home {
